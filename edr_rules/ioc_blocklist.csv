@@ -1,0 +1,7 @@
+Type,Indicator,Context,Recommended_Action
+File_Name,s5cmd.exe,Used by Ransom Busters for AWS data exfiltration,Block/Quarantine
+File_Name,netscan.exe,SoftPerfect Network Scanner used for internal recon,Alert/Quarantine
+File_Name,Remotely.exe,Unauthorized RMM tool used for persistence,Block/Quarantine
+Command_Line,"bcdedit /set {current} safeboot network",Akira tactic to force Safe Mode and disable EDR,Alert/Block_Execution
+Credential_Password,Numlock!123,Hardcoded password for local backdoor account,Alert_on_Use
+Network_Hostname,DESKTOP-BBETH6K,Known attacker-controlled machine,Block_Traffic
