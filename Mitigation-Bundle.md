@@ -66,3 +66,10 @@ Set Run this script using the logged on credentials to No (runs as SYSTEM).
 Assign to target device groups.
 
 
+EDR & SIEM Import:
+
+Copy the CSV data in the EDR Blocklist CSV section into a file named ioc_blocklist.csv.
+
+Import into CrowdStrike, Microsoft Defender XDR, SentinelOne, or your SIEM.
+
+Crucial Rule: Ensure bcdedit /set {current} safeboot network is set to Block Execution.
