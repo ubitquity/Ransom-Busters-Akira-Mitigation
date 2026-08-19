@@ -53,3 +53,16 @@ Because these actors rely heavily on Living off the Land (LotL) tools and creden
    ```powershell
    Set-ExecutionPolicy Bypass -Scope Process -Force
    .\Invoke-RansomBustersMitigation.ps1
+
+
+Enterprise Mass Deployment (Intune):
+
+Go to Intune admin center > Devices > Scripts > Add (Windows 10 and later).
+
+Upload Invoke-RansomBustersMitigation.ps1.
+
+Set Run this script using the logged on credentials to No (runs as SYSTEM).
+
+Assign to target device groups.
+
+
